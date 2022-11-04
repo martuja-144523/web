@@ -1,0 +1,140 @@
+/* normal css starts here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* normal css ends here  */
+/* nav style starts here  */
+nav{
+    background: #02918b;
+    /* width: 1280px; */  
+}
+nav img{
+    display: block;
+}
+nav .holder{
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+nav .logo{
+    width: 15%;
+    
+}
+.menue{
+    width:85%;
+}
+.menue ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+nav .menue ul li a{
+    padding: 26px 25px;
+    display: inline-block;
+    text-transform:uppercase ;
+    font-size: 12px;
+    font-weight: 800;
+    background: #02918b; 
+    transition: .7s; 
+    
+    color: #fff;
+} 
+nav .menue ul li {
+    position: relative;
+}
+
+nav .menue ul li:hover >a{
+    background: #cfc91d;
+    color: #0b1016;
+}
+/* nav .menue ul li a{
+    
+    display: inline-block;
+} */
+nav .menue ul li ul{
+    position: absolute;
+    /* display: block; */
+    display: none;
+}
+nav .menue ul li:hover ul{
+    display: block;
+}
+/* nav style ends here  */
+/* banner style starts here  */
+#banner{
+    width: 100%;
+    height: 730px;
+    background: url(../image/MYFOLIO.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .6;
+    z-index: -1;
+}
+#banner .content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#banner .content .text{
+    text-align: center;
+}
+#banner .content .text h3{
+    font-size:30px ;
+    font-weight: 400;
+    color: #fff;
+
+}
+#banner .content .text h1{
+    font-size:68px ;
+    font-weight: 800; 
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    color: #fff;
+}
+#banner .content .text p{
+    font-size:18px ;
+    font-weight: 400;
+    color: #fff;
+}
+#banner .content .text img{
+    display: block;
+    margin: 52px auto;
+    color: #fff;
+}
+#banner .content .text a{
+    font-size:14px ;
+    font-weight: 800; 
+    letter-spacing: 15px;
+    padding: 18px 42px;
+    text-transform: uppercase;
+    background: #cfc91d;
+    color: black;
+}
+/* banner style ends here  */
